@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Downloader</title>
+  </head>
+
+  <style>
+
+body
+{
+  background-color: rgba(191, 242, 242, 0.5);
+}
+
+
+#inputurl{
+
+    width: 100%;
+    padding: 1%;
+    margin: 1%;
+    margin-right: 30%;
+    border-radius: 10px;
+}
+
+
+#fetch-image-button ,#download-image-button{
+   
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+}
+
+h1{
+  font-size: clamp(24px , 4vw , 40px);
+  text-align: center;
+  text-shadow: 2px 2px  5px  rgb(255, 0, 72);
+}
+
+::placeholder{
+
+  text-align: center;
+}
+
+button
+{
+  background-color: thistle;
+  border:none;
+  border-radius: 10px;
+}
+</style>
+  <body>
+    <h1>Image Downloader</h1>
+   
+
+<input type="text" id="inputurl" placeholder="Insert Image Link Here" inputmode="text">
+
+<button id="fetch-image-button" onclick="fetchImage()">Download Image</button>
+   
+
+<div id="image-container" ></div>
+
+    <script src="src.js">     </script>
+  </body>
+</html>
